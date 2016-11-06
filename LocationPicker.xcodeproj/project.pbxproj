@@ -87,32 +87,31 @@
 		4DBA2084141F8C2DC13F8EDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D30DCD351D95C393002481E6 /* 3rd Party */,
 				BDEE36F44DE76EA45314BC72 /* Pods_LocationPicker.framework */,
 				36EEA5106DD3E1534D13627B /* Pods_LocationPickerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D30DCD351D95C393002481E6 /* 3rd Party */ = {
+		D30DCD351D95C393002481E6 /* Non-Pod Dependencies */ = {
 			isa = PBXGroup;
 			children = (
 				D34E33961D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.h */,
 				D34E33971D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m */,
 			);
-			name = "3rd Party";
-			path = LocationPicker;
+			path = "Non-Pod Dependencies";
 			sourceTree = "<group>";
 		};
 		D34E33651D8F43DD00DBA7C7 = {
 			isa = PBXGroup;
 			children = (
-				D34D67031DA57FF800F16C18 /* LocationService.swift */,
+				D3773A951DCFA06300E4749D /* Example */,
 				D34E33701D8F43DE00DBA7C7 /* LocationPicker */,
 				D34E33851D8F43DE00DBA7C7 /* LocationPickerTests */,
-				D34E336F1D8F43DE00DBA7C7 /* Products */,
-				4DBA2084141F8C2DC13F8EDC /* Frameworks */,
+				D30DCD351D95C393002481E6 /* Non-Pod Dependencies */,
 				F88D77028059855622757DE8 /* Pods */,
+				4DBA2084141F8C2DC13F8EDC /* Frameworks */,
+				D34E336F1D8F43DE00DBA7C7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,18 +127,13 @@
 		D34E33701D8F43DE00DBA7C7 /* LocationPicker */ = {
 			isa = PBXGroup;
 			children = (
-				D34E33711D8F43DE00DBA7C7 /* AppDelegate.swift */,
-				D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */,
-				D34D67011DA54BA200F16C18 /* LocationPickerMocking.swift */,
-				D31B1B6F1DCBED52001DC310 /* UICollectionViewLocations.swift */,
 				D31B1B711DCBED9F001DC310 /* Extensions.swift */,
-				D31B1B731DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift */,
-				D31B1B751DCBEF80001DC310 /* LocationPickerCell.swift */,
-				D34E33911D8F443700DBA7C7 /* LocationPicker.storyboard */,
-				D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */,
-				D34E337A1D8F43DE00DBA7C7 /* LaunchScreen.storyboard */,
-				D34E337D1D8F43DE00DBA7C7 /* Info.plist */,
 				D34E33951D8F6A8800DBA7C7 /* LocationPicker-Bridging-Header.h */,
+				D34E33911D8F443700DBA7C7 /* LocationPicker.storyboard */,
+				D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */,
+				D31B1B751DCBEF80001DC310 /* LocationPickerCell.swift */,
+				D31B1B731DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift */,
+				D31B1B6F1DCBED52001DC310 /* UICollectionViewLocations.swift */,
 			);
 			path = LocationPicker;
 			sourceTree = "<group>";
@@ -147,10 +141,23 @@
 		D34E33851D8F43DE00DBA7C7 /* LocationPickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				D34E33861D8F43DE00DBA7C7 /* LocationPickerTests.swift */,
 				D34E33881D8F43DE00DBA7C7 /* Info.plist */,
+				D34E33861D8F43DE00DBA7C7 /* LocationPickerTests.swift */,
 			);
 			path = LocationPickerTests;
+			sourceTree = "<group>";
+		};
+		D3773A951DCFA06300E4749D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				D34E33711D8F43DE00DBA7C7 /* AppDelegate.swift */,
+				D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */,
+				D34E337D1D8F43DE00DBA7C7 /* Info.plist */,
+				D34E337A1D8F43DE00DBA7C7 /* LaunchScreen.storyboard */,
+				D34D67011DA54BA200F16C18 /* LocationPickerMocking.swift */,
+				D34D67031DA57FF800F16C18 /* LocationService.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		F88D77028059855622757DE8 /* Pods */ = {
@@ -407,6 +414,7 @@
 				D34E337B1D8F43DE00DBA7C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -513,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9R3LQ2Q36B;
-				INFOPLIST_FILE = LocationPicker/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPicker;
@@ -532,7 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9R3LQ2Q36B;
-				INFOPLIST_FILE = LocationPicker/Info.plist;
+				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPicker;
