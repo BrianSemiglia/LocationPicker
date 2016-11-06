@@ -29,7 +29,7 @@ viewController.indicatorColor = .blue
 
 The use of a declarative interface internalizes the responsibility of knowing the correct order of operation.
 ```Swift
-Model(
+viewController.input = Model(
   state: .loading(Request(query: "near boston")),
   indicatorColor: .blue
 )
