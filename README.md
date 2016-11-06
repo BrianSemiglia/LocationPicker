@@ -46,5 +46,6 @@ The combination of a linear path and commands-as-values allows for observability
 1. Testing
 2. Rolling-back state (undo-manager)
 3. Restoring state (from a previous session)
-4. Playing-back state (animated feature tutorials, analytics replays, crash replays)
+4. Playing-back state (animated feature-tutorials, analytics replays, crash replays)
 
+![alt tag](https://github.com/BrianSemiglia/LocationPicker/blob/master/replay.gif)
