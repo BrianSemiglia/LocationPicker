@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C76431F29D9A62C66D51684 /* Pods_LocationPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEE36F44DE76EA45314BC72 /* Pods_LocationPicker.framework */; };
+		D31B1B701DCBED52001DC310 /* UICollectionViewLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B1B6F1DCBED52001DC310 /* UICollectionViewLocations.swift */; };
+		D31B1B721DCBED9F001DC310 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B1B711DCBED9F001DC310 /* Extensions.swift */; };
+		D31B1B741DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B1B731DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift */; };
+		D31B1B761DCBEF80001DC310 /* LocationPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B1B751DCBEF80001DC310 /* LocationPickerCell.swift */; };
+		D34D67021DA54BA200F16C18 /* LocationPickerMocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D67011DA54BA200F16C18 /* LocationPickerMocking.swift */; };
+		D34D67041DA57FF800F16C18 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D67031DA57FF800F16C18 /* LocationService.swift */; };
+		D34E33721D8F43DE00DBA7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E33711D8F43DE00DBA7C7 /* AppDelegate.swift */; };
+		D34E33741D8F43DE00DBA7C7 /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */; };
+		D34E33791D8F43DE00DBA7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */; };
+		D34E337C1D8F43DE00DBA7C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34E337A1D8F43DE00DBA7C7 /* LaunchScreen.storyboard */; };
+		D34E33871D8F43DE00DBA7C7 /* LocationPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E33861D8F43DE00DBA7C7 /* LocationPickerTests.swift */; };
+		D34E33921D8F443700DBA7C7 /* LocationPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34E33911D8F443700DBA7C7 /* LocationPicker.storyboard */; };
+		D34E33981D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D34E33971D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m */; };
+		D36FC0211DA1EA1700CD3318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */; };
+		D3EE627F1DA1E2DC007101EC /* LocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */; };
+		DC715B2DA39DEB913E8BD20B /* Pods_LocationPickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EEA5106DD3E1534D13627B /* Pods_LocationPickerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D34E33831D8F43DE00DBA7C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34E33661D8F43DD00DBA7C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D34E336D1D8F43DE00DBA7C7;
+			remoteInfo = LocationPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36EEA5106DD3E1534D13627B /* Pods_LocationPickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationPickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B84BFA25E09199AF6657F9 /* Pods-LocationPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPickerTests/Pods-LocationPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		80638F2321C6B5915E84E337 /* Pods-LocationPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPicker/Pods-LocationPicker.release.xcconfig"; sourceTree = "<group>"; };
+		BDEE36F44DE76EA45314BC72 /* Pods_LocationPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19476E77C04FA7DFD7194B8 /* Pods-LocationPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPickerTests/Pods-LocationPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D31B1B6F1DCBED52001DC310 /* UICollectionViewLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewLocations.swift; sourceTree = "<group>"; };
+		D31B1B711DCBED9F001DC310 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D31B1B731DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKAnnotationViewIdentifiable.swift; sourceTree = "<group>"; };
+		D31B1B751DCBEF80001DC310 /* LocationPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerCell.swift; sourceTree = "<group>"; };
+		D34D67011DA54BA200F16C18 /* LocationPickerMocking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerMocking.swift; sourceTree = "<group>"; };
+		D34D67031DA57FF800F16C18 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		D34E336E1D8F43DE00DBA7C7 /* LocationPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34E33711D8F43DE00DBA7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LocationPicker.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D34E337B1D8F43DE00DBA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D34E337D1D8F43DE00DBA7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34E33821D8F43DE00DBA7C7 /* LocationPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34E33861D8F43DE00DBA7C7 /* LocationPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerTests.swift; sourceTree = "<group>"; };
+		D34E33881D8F43DE00DBA7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34E33911D8F443700DBA7C7 /* LocationPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LocationPicker.storyboard; sourceTree = "<group>"; };
+		D34E33951D8F6A8800DBA7C7 /* LocationPicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationPicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		D34E33961D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaginatedCollectionViewLayout.h; sourceTree = "<group>"; };
+		D34E33971D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaginatedCollectionViewLayout.m; sourceTree = "<group>"; };
+		DFC52EF1B6A4C2FEC8809079 /* Pods-LocationPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPicker/Pods-LocationPicker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D34E336B1D8F43DE00DBA7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C76431F29D9A62C66D51684 /* Pods_LocationPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34E337F1D8F43DE00DBA7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC715B2DA39DEB913E8BD20B /* Pods_LocationPickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DBA2084141F8C2DC13F8EDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D30DCD351D95C393002481E6 /* 3rd Party */,
+				BDEE36F44DE76EA45314BC72 /* Pods_LocationPicker.framework */,
+				36EEA5106DD3E1534D13627B /* Pods_LocationPickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30DCD351D95C393002481E6 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				D34E33961D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.h */,
+				D34E33971D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m */,
+			);
+			name = "3rd Party";
+			path = LocationPicker;
+			sourceTree = "<group>";
+		};
+		D34E33651D8F43DD00DBA7C7 = {
+			isa = PBXGroup;
+			children = (
+				D34D67031DA57FF800F16C18 /* LocationService.swift */,
+				D34E33701D8F43DE00DBA7C7 /* LocationPicker */,
+				D34E33851D8F43DE00DBA7C7 /* LocationPickerTests */,
+				D34E336F1D8F43DE00DBA7C7 /* Products */,
+				4DBA2084141F8C2DC13F8EDC /* Frameworks */,
+				F88D77028059855622757DE8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D34E336F1D8F43DE00DBA7C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D34E336E1D8F43DE00DBA7C7 /* LocationPicker.app */,
+				D34E33821D8F43DE00DBA7C7 /* LocationPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D34E33701D8F43DE00DBA7C7 /* LocationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D34E33711D8F43DE00DBA7C7 /* AppDelegate.swift */,
+				D34E33731D8F43DE00DBA7C7 /* LocationPicker.swift */,
+				D34D67011DA54BA200F16C18 /* LocationPickerMocking.swift */,
+				D31B1B6F1DCBED52001DC310 /* UICollectionViewLocations.swift */,
+				D31B1B711DCBED9F001DC310 /* Extensions.swift */,
+				D31B1B731DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift */,
+				D31B1B751DCBEF80001DC310 /* LocationPickerCell.swift */,
+				D34E33911D8F443700DBA7C7 /* LocationPicker.storyboard */,
+				D34E33781D8F43DE00DBA7C7 /* Assets.xcassets */,
+				D34E337A1D8F43DE00DBA7C7 /* LaunchScreen.storyboard */,
+				D34E337D1D8F43DE00DBA7C7 /* Info.plist */,
+				D34E33951D8F6A8800DBA7C7 /* LocationPicker-Bridging-Header.h */,
+			);
+			path = LocationPicker;
+			sourceTree = "<group>";
+		};
+		D34E33851D8F43DE00DBA7C7 /* LocationPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D34E33861D8F43DE00DBA7C7 /* LocationPickerTests.swift */,
+				D34E33881D8F43DE00DBA7C7 /* Info.plist */,
+			);
+			path = LocationPickerTests;
+			sourceTree = "<group>";
+		};
+		F88D77028059855622757DE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFC52EF1B6A4C2FEC8809079 /* Pods-LocationPicker.debug.xcconfig */,
+				80638F2321C6B5915E84E337 /* Pods-LocationPicker.release.xcconfig */,
+				C19476E77C04FA7DFD7194B8 /* Pods-LocationPickerTests.debug.xcconfig */,
+				70B84BFA25E09199AF6657F9 /* Pods-LocationPickerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D34E336D1D8F43DE00DBA7C7 /* LocationPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34E338B1D8F43DE00DBA7C7 /* Build configuration list for PBXNativeTarget "LocationPicker" */;
+			buildPhases = (
+				A1719AF1C24CD93232EAA498 /* [CP] Check Pods Manifest.lock */,
+				D34E336A1D8F43DE00DBA7C7 /* Sources */,
+				D34E336B1D8F43DE00DBA7C7 /* Frameworks */,
+				D34E336C1D8F43DE00DBA7C7 /* Resources */,
+				80A0B6B5A3F91F317895620D /* [CP] Embed Pods Frameworks */,
+				E94F8A79E5C9879FEEF31828 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationPicker;
+			productName = LocationPicker;
+			productReference = D34E336E1D8F43DE00DBA7C7 /* LocationPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D34E33811D8F43DE00DBA7C7 /* LocationPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34E338E1D8F43DE00DBA7C7 /* Build configuration list for PBXNativeTarget "LocationPickerTests" */;
+			buildPhases = (
+				A04BDC6DF1B5AEFA3E57A995 /* [CP] Check Pods Manifest.lock */,
+				D34E337E1D8F43DE00DBA7C7 /* Sources */,
+				D34E337F1D8F43DE00DBA7C7 /* Frameworks */,
+				D34E33801D8F43DE00DBA7C7 /* Resources */,
+				39724033FE8D3C4A61F1361D /* [CP] Embed Pods Frameworks */,
+				12FDA1895B76105AB3315E47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D34E33841D8F43DE00DBA7C7 /* PBXTargetDependency */,
+			);
+			name = LocationPickerTests;
+			productName = LocationPickerTests;
+			productReference = D34E33821D8F43DE00DBA7C7 /* LocationPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D34E33661D8F43DD00DBA7C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Brian Semiglia";
+				TargetAttributes = {
+					D34E336D1D8F43DE00DBA7C7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9R3LQ2Q36B;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					D34E33811D8F43DE00DBA7C7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D34E336D1D8F43DE00DBA7C7;
+					};
+				};
+			};
+			buildConfigurationList = D34E33691D8F43DD00DBA7C7 /* Build configuration list for PBXProject "LocationPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D34E33651D8F43DD00DBA7C7;
+			productRefGroup = D34E336F1D8F43DE00DBA7C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D34E336D1D8F43DE00DBA7C7 /* LocationPicker */,
+				D34E33811D8F43DE00DBA7C7 /* LocationPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D34E336C1D8F43DE00DBA7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34E337C1D8F43DE00DBA7C7 /* LaunchScreen.storyboard in Resources */,
+				D34E33921D8F443700DBA7C7 /* LocationPicker.storyboard in Resources */,
+				D34E33791D8F43DE00DBA7C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34E33801D8F43DE00DBA7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36FC0211DA1EA1700CD3318 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12FDA1895B76105AB3315E47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationPickerTests/Pods-LocationPickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39724033FE8D3C4A61F1361D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationPickerTests/Pods-LocationPickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80A0B6B5A3F91F317895620D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationPicker/Pods-LocationPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A04BDC6DF1B5AEFA3E57A995 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1719AF1C24CD93232EAA498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94F8A79E5C9879FEEF31828 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationPicker/Pods-LocationPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D34E336A1D8F43DE00DBA7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34E33741D8F43DE00DBA7C7 /* LocationPicker.swift in Sources */,
+				D34D67021DA54BA200F16C18 /* LocationPickerMocking.swift in Sources */,
+				D31B1B761DCBEF80001DC310 /* LocationPickerCell.swift in Sources */,
+				D31B1B701DCBED52001DC310 /* UICollectionViewLocations.swift in Sources */,
+				D31B1B721DCBED9F001DC310 /* Extensions.swift in Sources */,
+				D34D67041DA57FF800F16C18 /* LocationService.swift in Sources */,
+				D34E33721D8F43DE00DBA7C7 /* AppDelegate.swift in Sources */,
+				D31B1B741DCBEE1F001DC310 /* MKAnnotationViewIdentifiable.swift in Sources */,
+				D34E33981D8F6A8800DBA7C7 /* PaginatedCollectionViewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34E337E1D8F43DE00DBA7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EE627F1DA1E2DC007101EC /* LocationPicker.swift in Sources */,
+				D34E33871D8F43DE00DBA7C7 /* LocationPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D34E33841D8F43DE00DBA7C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D34E336D1D8F43DE00DBA7C7 /* LocationPicker */;
+			targetProxy = D34E33831D8F43DE00DBA7C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D34E337A1D8F43DE00DBA7C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D34E337B1D8F43DE00DBA7C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D34E33891D8F43DE00DBA7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D34E338A1D8F43DE00DBA7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D34E338C1D8F43DE00DBA7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC52EF1B6A4C2FEC8809079 /* Pods-LocationPicker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9R3LQ2Q36B;
+				INFOPLIST_FILE = LocationPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationPicker/LocationPicker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D34E338D1D8F43DE00DBA7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80638F2321C6B5915E84E337 /* Pods-LocationPicker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9R3LQ2Q36B;
+				INFOPLIST_FILE = LocationPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LocationPicker/LocationPicker-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D34E338F1D8F43DE00DBA7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19476E77C04FA7DFD7194B8 /* Pods-LocationPickerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocationPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationPicker.app/LocationPicker";
+			};
+			name = Debug;
+		};
+		D34E33901D8F43DE00DBA7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B84BFA25E09199AF6657F9 /* Pods-LocationPickerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocationPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briansemiglia.LocationPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocationPicker.app/LocationPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D34E33691D8F43DD00DBA7C7 /* Build configuration list for PBXProject "LocationPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34E33891D8F43DE00DBA7C7 /* Debug */,
+				D34E338A1D8F43DE00DBA7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34E338B1D8F43DE00DBA7C7 /* Build configuration list for PBXNativeTarget "LocationPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34E338C1D8F43DE00DBA7C7 /* Debug */,
+				D34E338D1D8F43DE00DBA7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34E338E1D8F43DE00DBA7C7 /* Build configuration list for PBXNativeTarget "LocationPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34E338F1D8F43DE00DBA7C7 /* Debug */,
+				D34E33901D8F43DE00DBA7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D34E33661D8F43DD00DBA7C7 /* Project object */;
+}
