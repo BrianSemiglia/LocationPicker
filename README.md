@@ -20,7 +20,7 @@ func didSelectRowAtIndex(index: Int) {}
 A value-orientation seperates concerns more evidently and prevents the view controller from becoming involved in the details of the orgin/destination of its inputs/outputs and results in a component that is more modular, reuseable.
 
 ##Declaratively Encapsulated
-Commands are expressed as values leaving the caller free from having to know how to acheive the desired effect (what to call and when). Will the following work? It's not clear.
+Commands are expressed as values leaving the caller free from having to know how to acheive the desired effect (what to call and when). Traditional interfaces are prodecuraly coupled and calling commands out of order can produce issues.
 ```Swift
 viewController.load()
 viewController.request = Request(query: "near Boston")
