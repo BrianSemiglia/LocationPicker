@@ -6,15 +6,27 @@ Location Picker is a view controller that reduces an array of Locations to a sin
 Effects are prioritized over events and their handlers. The view controller is seens as an implementation detail of achieving a reduced list. This is expressed simply and publicly.
 
 ```Swift
-let input: [Location]
-let output: (Location) -> Void
+struct Location {
+  let isSelected: Bool
+}
+
+struct ViewModel {
+  let locations: [Location]
+}
+
+class ViewController {
+  let input: ViewModel
+  let output: ViewModel -> Void
+}
 ```
 
 Versus the more traditional interface which usually doesn't make its resposibility clear or public.
 ```Swift
-init() {}
-func viewDidLoad() {}
-func didSelectRowAtIndex(index: Int) {}
+class ViewController {
+  init() {}
+  func viewDidLoad() {}
+  func didSelectRowAtIndex(index: Int) {}
+}
 ```
 
 A value-orientation seperates concerns more evidently and prevents the view controller from becoming involved in the details of the orgin/destination of its inputs/outputs and results in a component that is more modular, reuseable.
