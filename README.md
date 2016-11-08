@@ -8,6 +8,7 @@ Effects are prioritized over events and their handlers. The view controller is s
 ```Swift
 struct ViewModel {
   struct Location {
+    let coordinate: CLLocationCoordinate2D
     let isSelected: Bool
   }
   let locations: [Location]
