@@ -16,7 +16,7 @@ struct ViewModel {
 
 class ViewController {
   let input: ViewModel
-  let output: ViewModel -> Void
+  let output: (ViewModel) -> Void
 }
 ```
 
