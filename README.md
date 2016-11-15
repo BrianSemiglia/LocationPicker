@@ -52,7 +52,7 @@ On callback (-layoutsubviews, -didInteractWithControl) the view controller retur
 
     Command -> Suggestion -> Validation? -> Command
 
-##Verifiable
+##Observable
 The combination of a linear path and commands-as-values allows for observability which allows for features like:
 
 1. Testing
