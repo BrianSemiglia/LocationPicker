@@ -40,8 +40,8 @@ final class LocationPicker:
       let cityStateZip: String
       let phoneNumber: String
       let hoursShippingOptionsHTML: String
-      let selectedImage: UIImage
-      let deselectedImage: UIImage
+      let selectedImage: UIImage?
+      let deselectedImage: UIImage?
       let coordinate: CLLocationCoordinate2D
       let backing: Any
       
@@ -659,12 +659,6 @@ extension UICollectionView {
   }
 }
 
-extension LocationPicker.Model.Location {
-  var mapImage: UIImage { return
-    self.isSelected ? self.selectedImage : self.deselectedImage
-  }
-}
-
 extension LocationPicker.Model {
   
   func copy(
@@ -760,8 +754,6 @@ extension LocationPicker.Model.Location: Equatable {
     left.callState == right.callState &&
     left.isOpeningMaps == right.isOpeningMaps &&
     left.coordinate == right.coordinate &&
-    left.selectedImage.hash == right.selectedImage.hash &&
-    left.deselectedImage.hash == right.deselectedImage.hash &&
     left.name == right.name &&
     left.street == right.street &&
     left.cityStateZip == right.cityStateZip &&
@@ -776,8 +768,6 @@ extension LocationPicker.Model.Location: Hashable {
       (isOpeningMaps ? "YES" : "NO") +
       String(coordinate.latitude) +
       String(coordinate.longitude) +
-      String(selectedImage.hash) +
-      String(deselectedImage.hash) +
       name +
       street +
       cityStateZip +

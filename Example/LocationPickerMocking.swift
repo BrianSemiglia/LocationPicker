@@ -48,8 +48,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 37.7749,
             longitude: -122.4194
@@ -67,8 +67,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 40.7128,
             longitude: -74.0059
@@ -86,8 +86,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 23.1136,
             longitude: -82.3666
@@ -105,8 +105,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: -22.9068,
             longitude: -43.1729
@@ -124,8 +124,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: -33.9249,
             longitude: 18.4241
@@ -143,8 +143,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 26.8206,
             longitude: 30.8025
@@ -162,8 +162,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 41.3851,
             longitude: 2.1734
@@ -181,8 +181,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 55.7558,
             longitude: 37.6173
@@ -200,8 +200,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 31.9454,
             longitude: 35.9284
@@ -219,8 +219,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 19.0760,
             longitude: 72.8777
@@ -238,8 +238,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 13.7563,
             longitude: 100.5018
@@ -257,8 +257,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: 31.2304,
             longitude: 121.4737
@@ -276,8 +276,8 @@ extension LocationPicker.Model {
           cityStateZip: "Somerville, MA 02143",
           phoneNumber: "555-555-5555",
           hoursShippingOptionsHTML: "",
-          selectedImage: UIImage(named: "pin-blue-dark")!,
-          deselectedImage: UIImage(named: "pin-blue-light")!,
+          selectedImage: nil,
+          deselectedImage: nil,
           coordinate: CLLocationCoordinate2D(
             latitude: -33.8688,
             longitude: 151.2093
