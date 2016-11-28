@@ -56,7 +56,7 @@ On callback (-layoutsubviews, -didInteractWithControl) the view controller retur
 The combination of a linear path and commands-as-values allows for observability which allows for features like:
 
 1. Testing
-2. Restoring state (from a previous session, undo-manager)
-3. Playing-back state (animated feature-tutorials, analytics replays, crash replays)
+2. State Restoration (from a previous session, undo-manager)
+3. State Playback (animated feature-tutorials, analytics replays, crash replays)
 
 ![alt tag](https://github.com/BrianSemiglia/LocationPicker/blob/master/replay.gif)
