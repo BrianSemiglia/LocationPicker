@@ -3,7 +3,7 @@ Location Picker is a view controller that reduces an array of Locations to a sin
 #Approaches
 
 ##Value-Oriented
-Effects are prioritized over events and their handlers. The view controller is seen as an implementation detail of achieving a reduced list. This is expressed simply and publicly.
+Effects are prioritized over events and their handlers. The view controller is seen as an implementation detail of achieving a reduced list.
 
 ```Swift
 struct ViewModel {
@@ -20,7 +20,7 @@ class ViewController {
 }
 ```
 
-Versus the more traditional interface which usually doesn't make its resposibility clear or public.
+Versus a more traditional interface which usually doesn't make its resposibility as clear or public.
 ```Swift
 class ViewController {
   init() {}
@@ -29,7 +29,7 @@ class ViewController {
 }
 ```
 
-A value-orientation seperates concerns more evidently and prevents the view controller from becoming involved in the details of the orgin/destination of its inputs/outputs and results in a component that is more modular, reuseable.
+A value-orientation seperates concerns more evidently and prevents the view controller from becoming involved in the details of the orgin/destination of its inputs/outputs and results in a component that is more modular and reuseable.
 
 ##Declaratively Encapsulated
 Commands are expressed as values leaving the caller free from having to know how to acheive the desired effect (what to call and when). Traditional interfaces are prodecuraly coupled and calling commands out of order can produce issues.
