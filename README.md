@@ -59,4 +59,7 @@ The combination of a linear path and commands-as-values allows for observability
 2. State Restoration (from a previous session, undo-manager)
 3. State Playback (animated feature-tutorials, analytics replays, crash replays)
 
+### Demonstration
+The first half of this GIF is the user's interaction and the second, the playback of that interaction.
+
 ![alt tag](https://github.com/BrianSemiglia/LocationPicker/blob/master/replay.gif)
