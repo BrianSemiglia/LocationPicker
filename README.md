@@ -1,4 +1,5 @@
-Location Picker is a view controller that reduces an array of Locations to a single Location. [Location] -> Location
+## Purpose
+Location Picker is a view controller that reduces an array of Locations to a single Location. ```[Location] -> Location```
 
 ## Approaches
 
