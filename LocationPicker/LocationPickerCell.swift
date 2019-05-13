@@ -31,7 +31,7 @@ final class LocationPickerCell: UICollectionViewCell {
       phoneNumberLabel?.text = phoneNumber
     }
   }
-  var didReceiveTouchDown: ((Void) -> Void)?
+    var didReceiveTouchDown: (() -> Void)?
   
   @IBOutlet var titleLabel: UILabel?
   @IBOutlet var streetLabel: UILabel?

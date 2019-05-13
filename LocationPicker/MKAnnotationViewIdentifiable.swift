@@ -47,7 +47,7 @@ extension MKMapView {
           .forEach { x in
             if let current = self.view(for: x) {
               if x.isSelected {
-                current.superview?.bringSubview(toFront: current)
+                current.superview?.bringSubviewToFront(current)
               }
             }
         }

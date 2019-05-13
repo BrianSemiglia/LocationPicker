@@ -66,7 +66,7 @@ extension MKPointAnnotation {
       self.coordinate = coordinate
       self.title = title
     }
-    override var hashValue: Int { return
+    override var hash: Int { return
       (title! + String(describing: coordinate)).hash
     }
     override func isEqual(_ object: Any?) -> Bool {
@@ -112,7 +112,7 @@ extension UICollectionView {
   func perform(batchUpdates: @escaping () -> Void, completion: ((Bool) -> Void)? = nil) {
     performBatchUpdates(batchUpdates, completion: completion)
   }
-  func possiblyScrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionViewScrollPosition, animated: Bool) {
+    func possiblyScrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionView.ScrollPosition, animated: Bool) {
     if
       let source = dataSource,
       let number = source.numberOfSections.map({ $0(self) }),
@@ -125,9 +125,9 @@ extension UICollectionView {
 
 extension MKCoordinateSpan {
   static var zoomedOut: MKCoordinateSpan { return
-    MKCoordinateSpanMake(
-      0.00625,
-      0.00625
+    MKCoordinateSpan(
+        latitudeDelta: 0.00625,
+        longitudeDelta: 0.00625
     )
   }
 }

@@ -79,7 +79,7 @@ final class UICollectionViewLocations:
     )
   }
   
-  static func cell(cell: LocationPickerCell, decoratedWith location: LocationPicker.Model.Location, touchDownHandler: @escaping (Void) -> Void) -> LocationPickerCell {
+  static func cell(cell: LocationPickerCell, decoratedWith location: LocationPicker.Model.Location, touchDownHandler: @escaping () -> Void) -> LocationPickerCell {
     cell.title = location.name
     cell.street = location.street
     cell.cityStateZip = location.cityStateZip

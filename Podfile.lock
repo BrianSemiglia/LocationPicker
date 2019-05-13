@@ -8,6 +8,12 @@ DEPENDENCIES:
   - MBProgressHUD
   - NonCoalescingDispatchQueue
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FDStackView
+    - MBProgressHUD
+    - NonCoalescingDispatchQueue
+
 SPEC CHECKSUMS:
   FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -15,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 76105741a8a88ebcf111664d7385948609386f0a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.6.1

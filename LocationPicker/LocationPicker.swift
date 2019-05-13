@@ -140,8 +140,8 @@ final class LocationPicker:
     }
   }
   
-  override func willMove(toParentViewController parent: UIViewController?) {
-    super.willMove(toParentViewController: parent)
+    override func willMove(toParent parent: UIViewController?) {
+    super.willMove(toParent: parent)
     if let model = model, parent != nil /* isBeingDismissed */ {
       outputHandler?.locationPicker(
         self,
@@ -311,7 +311,7 @@ final class LocationPicker:
               withDuration: oldValue.map { $0.shouldRender ? 0.33 : 0 } ?? 0,
               animations: {
                 for x in self.showingSearchHidingPickerDetailsMapLayoutMargins { x.key.layoutMargins = x.value }
-                for x in self.hidingPickerSearchDetailsPriorities { x.key.priority = x.value }
+                for x in self.hidingPickerSearchDetailsPriorities { x.key.priority = UILayoutPriority(rawValue: x.value) }
                 for x in self.hidingPickerDetailsAlphas { x.key.alpha = x.value }
                 self.view.layoutIfNeeded()
                 self.map?.layoutIfNeeded()
@@ -333,7 +333,7 @@ final class LocationPicker:
               animations: {
                 self.detailChangeLocation?.isHidden = new.locations.count <= 1
                 for x in self.showingDetailsHidingPickerAlphas { x.key.alpha = x.value }
-                for x in self.showingDetailsHidingPickerSearchPriorities { x.key.priority = x.value }
+                for x in self.showingDetailsHidingPickerSearchPriorities { x.key.priority = UILayoutPriority(rawValue: x.value) }
                 for x in self.showingPickerHidingDetailsSearchMapLayoutMargins { x.key.layoutMargins = x.value }
                 if let selected = new.locations.selected {
                   for x in self.labelTextsFor(location: selected) { x.key.text = x.value }
@@ -367,7 +367,7 @@ final class LocationPicker:
                 withDuration: oldValue.map { $0.shouldRender ? 0.33 : 0 } ?? 0,
                 animations: {
                   self.showingPickerHidingDetailsAlphas.forEach {  $0.key.alpha = $0.value }
-                  self.showingPickerSearchHidingDetailsPriorities.forEach { $0.key.priority = $0.value }
+                    self.showingPickerSearchHidingDetailsPriorities.forEach { $0.key.priority = UILayoutPriority(rawValue: $0.value) }
                   self.showingPickerSearchHidingDetailsMapLayoutMargins.forEach { $0.key.layoutMargins = $0.value }
                   self.view.layoutIfNeeded()
                   self.map?.layoutIfNeeded()
@@ -411,7 +411,7 @@ final class LocationPicker:
                 withDuration: oldValue.map { $0.shouldRender ? 0.33 : 0 } ?? 0,
                 animations: {
                   self.showingPickerHidingDetailsAlphas.forEach { $0.key.alpha = $0.value }
-                  self.showingPickerSearchHidingDetailsPriorities.forEach { $0.key.priority = $0.value }
+                    self.showingPickerSearchHidingDetailsPriorities.forEach { $0.key.priority = UILayoutPriority(rawValue: $0.value) }
                   self.showingPickerSearchHidingDetailsMapLayoutMargins.forEach { $0.key.layoutMargins = $0.value }
                   self.map?.render(
                     annotations: new.locations.map { $0.asAnnotation }
@@ -453,7 +453,7 @@ final class LocationPicker:
             UIView.animate(
               withDuration: oldValue.map { $0.shouldRender ? 0.33 : 0 } ?? 0,
               animations: {
-                self.hidingPickerSearchDetailsPriorities.forEach { $0.key.priority = $0.value }
+                self.hidingPickerSearchDetailsPriorities.forEach { $0.key.priority = UILayoutPriority(rawValue: $0.value) }
                 self.hidingPickerSearchDetailsMapLayoutMargins.forEach { $0.key.layoutMargins = $0.value }
                 self.view.layoutIfNeeded()
                 self.map?.layoutIfNeeded()
@@ -578,7 +578,7 @@ final class LocationPicker:
     }
   }
 
-  func didReceiveEventFromMap(recognizer: UIGestureRecognizer) {
+    @objc func didReceiveEventFromMap(recognizer: UIGestureRecognizer) {
     if let model = model {
       outputHandler?.locationPicker(
         self,
