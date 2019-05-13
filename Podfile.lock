@@ -1,7 +1,7 @@
 PODS:
-  - FDStackView (1.0)
-  - MBProgressHUD (1.0.0)
-  - NonCoalescingDispatchQueue (0.1.1)
+  - FDStackView (1.0.1)
+  - MBProgressHUD (1.1.0)
+  - NonCoalescingDispatchQueue (0.2.0)
 
 DEPENDENCIES:
   - FDStackView
@@ -15,10 +15,10 @@ SPEC REPOS:
     - NonCoalescingDispatchQueue
 
 SPEC CHECKSUMS:
-  FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  NonCoalescingDispatchQueue: 37cfe97b89cd84aae94f81b17abe724ff6ca86e3
+  FDStackView: fc0697e5be2022c8af36ce66e9e2061006058ba8
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  NonCoalescingDispatchQueue: e3cd61aa8261b06970a39f89577a373896f28db6
 
-PODFILE CHECKSUM: 76105741a8a88ebcf111664d7385948609386f0a
+PODFILE CHECKSUM: d4e52ee224ce77c505508d8c3a4ee8ca3fed276c
 
 COCOAPODS: 1.6.1
